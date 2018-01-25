@@ -9,10 +9,14 @@ def slice_book(src):
 	f = open(src, 'r')
 	text = f.read()
 	f.close()
-	return text.split()
+	text = text.split()
+	
+	return text
+	
 list = slice_book('drac_1-2.txt')
 
 def book_dict(list):
+	"""takes a list of strings and creates dictionary with two words as key, third work as value"""
 	dict = {'the the': ['the']}
 	
 	for i in range(0, len(list)):
