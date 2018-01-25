@@ -6,4 +6,5 @@ setup(
 	version = 0.1
 	author = "Charlie Heiner"
 	license = 'MIT'
+	install_requires = ["io"]
 )
