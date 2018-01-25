@@ -1,5 +1,7 @@
 def main(src, n):
-	pass
+	list = slice_book(src)
+	dict = book_dict(list)
+	print(dict)
 
 	
 def slice_book(src):
@@ -16,7 +18,10 @@ def slice_book(src):
 list = slice_book('drac_1-2.txt')
 
 def book_dict(list):
-	"""takes a list of strings and creates dictionary with two words as key, third work as value"""
+	"""takes a list of strings ['a','b','c','d']
+	and creates dictionary of trigrams as follows:
+	{'a b': ['c'], 'b c': [d]}
+	"""
 	dict = {'the the': ['the']}
 	
 	for i in range(0, len(list)):
@@ -29,8 +34,10 @@ def book_dict(list):
 				
 	return dict
 	
+
+main('drac_1-2.txt', 0)
 	
 	
 
-print(slice_book('drac_1-2.txt'))
-print(book_dict(list))
+#print(slice_book('drac_1-2.txt'))
+#print(book_dict(list))
