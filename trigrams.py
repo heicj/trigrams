@@ -1,3 +1,4 @@
+import sys
 
 def main(src, n):
 	import random
@@ -17,21 +18,8 @@ def main(src, n):
 		
 	par_string = ' '.join(paragraph)
 	
-	#for i in range(n):
-		 
-		
-	
-	#if len(paragraph) < n:
-		
-	#with that key add it's value (word) to the paragraph
-	#while len(paragraph) < n:
-		
 	
 	
-	
-	
-	#print(dict_keys)
-	print(paragraph)
 	print(par_string)
 	
 
@@ -72,3 +60,6 @@ def book_dict(list):
 
 	
 main('sawyer.txt', 10)
+
+if __name__ == '__main__':
+	main(sys.argv[1], int(sys.argv[2]))
